@@ -62,28 +62,7 @@ You will see the automatically generated API testing interface.
     - Send HTTP requests directly.
     - View formatted responses and cURL commands.
 
----
 
-## Project Structure
-
-```
-spring-auto-ui/
-├─ frontend/                     # React/Vite frontend
-├─ src/
-│  ├─ main/
-│  │  ├─ java/
-│  │  │  └─ com/mnf/springautoui/
-│  │  │     ├─ controller/AutoUIController.java
-│  │  │     ├─ util/detection/ControllerMethodDetector.java
-│  │  │     ├─ util/propertiesConfig/PropertiesService.java
-│  │  │     └─ autoconfig/AutoUiAutoConfiguration.java
-│  │  └─ resources/
-│  │     ├─ META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports
-│  │     └─ static/auto-ui/    # Compiled frontend UI
-└─ pom.xml
-```
-
----
 
 ## Building the Project
 
