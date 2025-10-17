@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-zinc-50;
+}
+:root{
+    --surface:#ffffff;
+    --surface-2:#fafafa;
+    --line:#eaeaea;
+    --text:#0f172a;
+    --muted:#6b7280;
+    --brand:#2563eb;
+    --brand-2:#1d4ed8;
+    --ring: rgba(37,99,235,.35);
+}
+.bg-surface{background:var(--surface)}
+.bg-surface2{background:var(--surface-2)}
+.text-muted{color:var(--muted)}
+.border-line{border-color:var(--line)}
+.btn-primary {
+    @apply px-5 py-2.5 rounded-lg text-white font-semibold shadow-md transition active:scale-[0.98];
+    background-image: linear-gradient(90deg, #0284c7, #0369a1);
+}
+.btn-primary:hover {
+    filter: brightness(1.1);
+}
+.input {
+    @apply w-full px-3.5 py-2.5 rounded-lg border-2 border-zinc-200 bg-zinc-50 text-[15px] transition;
+}
+.input:focus {
+    @apply border-sky-400 ring-2 ring-sky-100 outline-none;
+}
+.card:hover {
+    @apply shadow-[0_4px_16px_rgba(0,0,0,0.08)];
+}
+.badge{
+    @apply px-2 py-0.5 rounded text-xs bg-surface2 border border-line text-muted;
+}
+.tab{
+    @apply px-3 py-1.5 rounded-full text-sm border border-line transition;
+}
+.tab-active{
+    @apply bg-surface text-[var(--brand)] border-[var(--brand)];
+}
+.textarea, textarea {
+    @apply w-full h-64 p-3 rounded-xl border-2 border-zinc-200 bg-zinc-50 focus:border-sky-400 focus:ring-2 focus:ring-sky-100 font-mono text-sm transition;
+}
+.field-title {
+    @apply text-sm font-semibold uppercase tracking-wide text-zinc-600 mb-2 border-b border-zinc-200 pb-1;
+}
+.sidebar-item {
+    @apply flex items-center gap-2 px-3 py-2 rounded-lg transition;
+}
+.sidebar-item:hover {
+    @apply bg-zinc-100 text-sky-600;
+}
+.sidebar-item-active {
+    @apply bg-sky-50 border-l-4 border-sky-400 text-sky-700;
+}

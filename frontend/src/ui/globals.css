@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body, #root { height: 100%; }
+
+
+/* Code block styling */
+pre { @apply bg-zinc-900 text-zinc-100 rounded-xl p-4 overflow-auto; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
