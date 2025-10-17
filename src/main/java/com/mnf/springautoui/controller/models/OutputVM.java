@@ -1,4 +1,7 @@
 package com.mnf.springautoui.controller.models;
 
-public record OutputVM() {
+import java.util.List;
+
+public record OutputVM(String returnClass,
+                       List<String> fields) {
 }

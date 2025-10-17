@@ -1,0 +1,39 @@
+package com.mnf.springautoui.util.config;
+
+import com.mnf.springautoui.util.propertiesConfig.DetectionTypeEnum;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ConfigurationProperties(prefix = "spring-auto-ui")
+public class PropertiesConfiguration {
+
+    private DetectionTypeEnum detectionType = DetectionTypeEnum.INCLUDE;
+    private String packageToScan="";
+
+    private String title="Auto UI";
+
+    public DetectionTypeEnum getDetectionType() {
+        return detectionType;
+    }
+
+    public void setDetectionType(DetectionTypeEnum detectionType) {
+        this.detectionType = detectionType;
+    }
+
+    public String getPackageToScan() {
+        return packageToScan;
+    }
+
+    public void setPackageToScan(String packageToScan) {
+        this.packageToScan = packageToScan;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+}
